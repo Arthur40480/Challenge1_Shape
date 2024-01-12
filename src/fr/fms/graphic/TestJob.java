@@ -1,5 +1,7 @@
 package fr.fms.graphic;
 
+import java.awt.Graphics;
+
 public class TestJob {
 	
 	public static void main (String[] args) {
@@ -16,7 +18,7 @@ public class TestJob {
 		job.deleteShape(1);
 		job.moveShape(3,20,30);
 		job.displayAll();
-		
+
 	}
 
 }
