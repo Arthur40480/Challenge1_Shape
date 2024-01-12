@@ -34,17 +34,7 @@ public class IJobImpl implements IJob {
 	
 	public void drawShape(Graphics g) {
 		for (Shape shape : shapes.values()) {
-			if(shape instanceof Circle) {
-				Circle circleSelected = (Circle) shape;
-				int radiusSelected = (int) circleSelected.getRadius();
-				Point pointSelected = (Point) circleSelected.getCenter();
-				g.fillOval(pointSelected.getX(), pointSelected.getY(), radiusSelected * 2, radiusSelected * 2);
-			} else if(shape instanceof Square) {
-				Square squareSelected = (Square) shape;
-				int sideSelected = (int) squareSelected.getSide();
-				Point pointSelected = (Point) squareSelected.getCenter();
-				g.drawRect(pointSelected.getX(), pointSelected.getY(), sideSelected, sideSelected);
-			}
+			shape.drawShape(g);
 		}
 	}
 	

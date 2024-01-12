@@ -1,5 +1,7 @@
 package fr.fms.graphic;
 
+import java.awt.Graphics;
+
 public abstract class Shape {
 private Point center;
 
@@ -18,6 +20,8 @@ public void setCenter(Point center) {
 public Point getCenter() {
 	return center;
 }
+
+public abstract void drawShape(Graphics g);
 
 @Override
 public String toString() {

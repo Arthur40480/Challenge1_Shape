@@ -30,8 +30,7 @@ public class Graphic extends JFrame {
 	public void paint(Graphics g) {	
 		super.paint(g);
 		IJobImpl.drawShape(g);
-		
-		
+			
 //		g.fillOval(50, 50, 35, 35);	// x , y , largeur , hauteur (diamètre)
 //		g.drawOval(150, 50, 45, 70);
 //		g.drawRect(50, 150, 50, 50);

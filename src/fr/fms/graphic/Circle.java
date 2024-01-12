@@ -1,6 +1,8 @@
 package fr.fms.graphic;
 
-public class Circle extends Shape{
+import java.awt.Graphics;
+
+public class Circle extends Shape implements IShape{
 
 private double radius;
 
@@ -34,6 +36,11 @@ public double area() {
 
 public double perimeter() {
 	return 2 * Math.PI * this.radius;
+}
+
+public void drawShape(Graphics g) {
+	int radiusSelected = (int) this.getRadius();
+	g.fillOval(this.getCenter().getX(), this.getCenter().getY(), radiusSelected * 2, radiusSelected * 2);
 }
 
 @Override

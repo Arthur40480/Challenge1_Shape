@@ -1,5 +1,8 @@
 package fr.fms.graphic;
 
-public interface IShape {
+import java.awt.Graphics;
 
+public interface IShape {
+	
+	public void drawShape(Graphics g);
 }

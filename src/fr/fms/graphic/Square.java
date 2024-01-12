@@ -1,6 +1,8 @@
 package fr.fms.graphic;
 
-public class Square extends Shape {
+import java.awt.Graphics;
+
+public class Square extends Shape implements IShape {
 	private double side;
 
 	public Square(double side, int x, int y) {
@@ -30,6 +32,11 @@ public class Square extends Shape {
 	
 	public double perimeter() {
 		return 4 * side;
+	}
+	
+	public void drawShape(Graphics g) {
+		int sideSelected = (int) this.getSide();
+		g.drawRect(this.getCenter().getX(), this.getCenter().getY(), sideSelected, sideSelected);
 	}
 	
 	@Override
