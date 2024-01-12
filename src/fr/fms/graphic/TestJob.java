@@ -1,6 +1,6 @@
 package fr.fms.graphic;
 
-public class Testjob {
+public class TestJob {
 	
 	public static void main (String[] args) {
 		IJobImpl job = new IJobImpl ();
